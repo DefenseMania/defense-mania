@@ -33,7 +33,7 @@ DefenseMania is splitted into 3 parts: desktop application and android applicati
 2. Android: open processing, export the android project from the file menu, run `cd src/android && ant`, this will create the file `src/android/application.android/DefenseMania-unsigned.apk`.
 3. Browser: run `cd src/browser && ant`, this will create the compiled and minified project in `src/browser/application.web`.
 
-### Maps
+### Maps & Map Editor
 
 1. Download the DM Map Editor from [here](https://github.com/DefenseMania/defense-mania-map-editor/releases) and read [how to use it](https://github.com/DefenseMania/defense-mania-map-editor#how-to-use-the-editor).
 2. You can submit new maps via pull-requests in **this** repository.
@@ -41,10 +41,6 @@ DefenseMania is splitted into 3 parts: desktop application and android applicati
 ### Graphics
 
 Take a look [here](https://github.com/DefenseMania/defense-mania-graphics).
-
-### Map Editor
-
-Take a look [here](https://github.com/DefenseMania/defense-mania-map-editor).
 
 
 ## Roadmap
