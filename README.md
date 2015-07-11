@@ -57,7 +57,7 @@ Take a look [here](https://github.com/DefenseMania/defense-mania-graphics).
 
 ## Contributors
 
-* John Brüggemann [Logo]
+* John Brüggemann [logo]
 * Lars Meyer [beta tester]
 * Alexander Spennesberger [beta tester]
 * Dieter Meiller [beta tester]
