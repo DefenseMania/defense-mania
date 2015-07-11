@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+  <towersettings>
+    <towers>
+    
+      <tower name="Arrow Tower" damageincrease="0" explosionatenemy="1" hasshootinganimation="0" charset="tower1.png" towericon="tower_icon1.png" towericonsize="30" tilesize="64" damage="5" firerate="500" fireradius="150" splash="0" splashradius="0" splashfactor="0" costs="25" freeze="0" maxhealth="150" updates="2" u1-costs="30" u2-costs="40" u1-damage="8" u1-firerate="400" u1-fireradius="170" u2-damage="12" u2-firerate="350" u2-fireradius="190">moderate firerate, moderate damge</tower>
+
+      <tower name="Freeze Tower" damageincrease="0" explosionatenemy="0" hasshootinganimation="0" charset="tower3.png" towericon="tower_icon3.png" towericonsize="30" tilesize="64" damage="1" firerate="500" fireradius="150" splash="0" splashradius="0" splashfactor="0" costs="55" freeze="0.6" maxhealth="200" updates="2" u1-costs="65" u2-costs="85" u1-damage="4" u2-damage="8" u1-firerate="400" u2-firerate="250" u1-fireradius="180" u2-fireradius="220">High firerate, freezing enemies</tower>
+          
+    </towers>
+  </towersettings>

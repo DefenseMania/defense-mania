@@ -1,0 +1,18 @@
+<?xml version='1.0'?>
+  <pathfinding>
+    <waypoints>
+      <waypoint id='0'>24,216,0</waypoint>
+      <waypoint id='1'>264,216,2</waypoint>
+      <waypoint id='2'>264,168,2</waypoint>
+      <waypoint id='3'>600,168,2</waypoint>
+      <waypoint id='4'>600,312,2</waypoint>
+      <waypoint id='5'>456,312,2</waypoint>
+      <waypoint id='6'>456,456,2</waypoint>
+      <waypoint id='7'>696,456,2</waypoint>
+      <waypoint id='8'>696,216,2</waypoint>
+      <waypoint id='9'>840,216,2</waypoint>
+      <waypoint id='10'>840,312,2</waypoint>
+      <waypoint id='11'>936,312,2</waypoint>
+      <waypoint id='12'>936,456,1</waypoint>
+    </waypoints>
+  </pathfinding>

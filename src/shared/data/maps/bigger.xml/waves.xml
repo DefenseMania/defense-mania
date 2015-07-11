@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+  <enemies>
+    <waves>
+      <wave enemydistance='500'>
+        <enemy id='3' charset='1890214543_charset.png' icon='1890214543_icon.png' tilesize='64' maxhealth='8' money='2' movespeed='70' animationspeed='20' damage='0' count='100'></enemy>
+      </wave>
+      <wave enemydistance='400'>
+        <enemy id='4' charset='1890214543_charset.png' icon='1890214543_icon.png' tilesize='64' maxhealth='12' money='2' movespeed='70' animationspeed='20' damage='0' count='200'></enemy>
+      </wave>
+      <wave enemydistance='400'>
+        <enemy id='6' charset='988607914_charset.png' icon='988607914_icon.png' tilesize='64' maxhealth='60' money='3' movespeed='120' animationspeed='12' damage='0' count='40'></enemy>
+         <enemy id='5' charset='1890214543_charset.png' icon='1890214543_icon.png' tilesize='64' maxhealth='24' money='2' movespeed='70' animationspeed='20' damage='0' count='60'></enemy>
+      </wave>     
+      <wave enemydistance='800'>
+        <enemy id='7' charset='295541746_charset.png' icon='295541746_icon.png' tilesize='64' maxhealth='350' money='20' movespeed='60' animationspeed='7' damage='0' count='10'></enemy>        
+      </wave>
+      <wave enemydistance='400'>
+        <enemy id='8' charset='988607914_charset.png' icon='988607914_icon.png' tilesize='64' maxhealth='80' money='6' movespeed='120' animationspeed='12' damage='0' count='40'></enemy>
+         <enemy id='9' charset='1890214543_charset.png' icon='1890214543_icon.png' tilesize='64' maxhealth='45' money='4' movespeed='70' animationspeed='20' damage='0' count='60'></enemy>
+         <enemy id='10' charset='295541746_charset.png' icon='295541746_icon.png' tilesize='64' maxhealth='600' money='20' movespeed='60' animationspeed='7' damage='0' count='20'></enemy>
+      </wave>
+      <wave enemydistance='400'>
+        <enemy id='11' charset='988607914_charset.png' icon='988607914_icon.png' tilesize='64' maxhealth='90' money='6' movespeed='120' animationspeed='12' damage='0' count='40'></enemy>
+         <enemy id='12' charset='1890214543_charset.png' icon='1890214543_icon.png' tilesize='64' maxhealth='60' money='4' movespeed='70' animationspeed='20' damage='0' count='60'></enemy>
+         <enemy id='13' charset='295541746_charset.png' icon='295541746_icon.png' tilesize='64' maxhealth='700' money='10' movespeed='60' animationspeed='7' damage='0' count='20'></enemy>
+      </wave>
+      <wave enemydistance='800'>
+      	<enemy id='14' charset='857108183_charset.png' icon='857108183_icon.png' tilesize='64' maxhealth='1200' money='20' movespeed='60' animationspeed='7' damage='8' count='15'></enemy>
+      </wave>
+      <wave enemydistance='400'>
+      	 <enemy id='15' charset='988607914_charset.png' icon='988607914_icon.png' tilesize='64' maxhealth='150' money='8' movespeed='120' animationspeed='12' damage='0' count='40'></enemy>
+         <enemy id='16' charset='1890214543_charset.png' icon='1890214543_icon.png' tilesize='64' maxhealth='100' money='6' movespeed='70' animationspeed='20' damage='0' count='60'></enemy>
+      </wave>
+      <wave enemydistance='400'>
+      	<enemy id='17' charset='857108183_charset.png' icon='857108183_icon.png' tilesize='64' maxhealth='1400' money='70' movespeed='60' animationspeed='7' damage='12' count='15'></enemy>
+      	<enemy id='18' charset='295541746_charset.png' icon='295541746_icon.png' tilesize='64' maxhealth='900' money='30' movespeed='60' animationspeed='7' damage='0' count='20'></enemy>
+      </wave>
+      <wave enemydistance='400'>
+        <enemy id='19' charset='1890214543_charset.png' icon='1890214543_icon.png' tilesize='64' maxhealth='2200' money='2' movespeed='60' animationspeed='10' damage='0' count='400'></enemy>
+      </wave>
+    </waves>
+  </enemies>

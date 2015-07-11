@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+  <campaigns>
+    <standardmaps>
+    
+    	<map name="Mountains" img="map_logo.png" url="mountains.xml" size="20 x 15"></map>
+    	<map name="The Maze" img="map_logo.png" url="maze.xml" size="20 x 15"></map>
+    	<map name="Dark Woods" img="map_logo.png" url="woods.xml" size="20 x 15"></map>
+    	<map name="River Side" img="map_logo.png" url="river_side.xml" size="20 x 15"></map>
+    	<map name="Bigger" img="map_logo.png" url="bigger.xml" size="40 x 18"></map>
+    
+    </standardmaps>    
+   </campaigns>

@@ -1,0 +1,57 @@
+<?xml version='1.0'?>
+  <enemies>
+    <waves>
+    
+    	<wave enemydistance="2000">            
+            <enemy charset="charset1.png" icon="icon1.png" tilesize="64" maxhealth="5" money="2" movespeed="60" animationspeed="15" count="10" damage="0">
+            </enemy>            
+        </wave>
+        
+    
+    	<wave enemydistance="1500">
+    		<enemy charset="charset1.png" icon="icon1.png" tilesize="64" maxhealth="5" money="2" movespeed="60" animationspeed="15" count="10" damage="0">
+            </enemy> 
+    		<enemy charset="charset2.png" icon="icon2.png" tilesize="64" maxhealth="50" money="5" movespeed="20" animationspeed="8" count="2" damage="0">
+            </enemy>
+    	</wave>
+    	
+             	
+        <wave enemydistance="800">
+    		<enemy charset="charset1.png" icon="icon1.png" tilesize="64" maxhealth="10" money="3" movespeed="60" animationspeed="15" count="20" damage="0">
+            </enemy> 
+    	</wave>
+    	
+    	<wave enemydistance="1500">
+    		<enemy charset="charset2.png" icon="icon2.png" tilesize="64" maxhealth="100" money="10" movespeed="35" animationspeed="8" count="4" damage="0">
+            </enemy>
+    	</wave>    	
+            
+         <wave enemydistance="1000">
+    		<enemy charset="charset3.png" icon="icon3.png" tilesize="64" maxhealth="140" money="14" movespeed="50" animationspeed="10" count="2" damage="8">
+            </enemy> 
+    	</wave>
+    	    	
+    	<wave enemydistance="800">            
+            <enemy charset="charset1.png" icon="icon1.png" tilesize="64" maxhealth="25" money="4" movespeed="80" animationspeed="15" count="25" damage="0">
+            </enemy>            
+        </wave>
+        
+         
+         <wave enemydistance="1000">
+    		<enemy charset="charset2.png" icon="icon2.png" tilesize="64" maxhealth="150" money="15" movespeed="50" animationspeed="8" count="3" damage="0">
+            </enemy>
+            <enemy charset="charset3.png" icon="icon3.png" tilesize="64" maxhealth="200" money="20" movespeed="50" animationspeed="10" count="2" damage="16">
+            </enemy> 
+    	</wave>
+    	
+    	<wave enemydistance="1500">
+    		<enemy charset="charset1.png" icon="icon1.png" tilesize="64" maxhealth="25" money="5" movespeed="60" animationspeed="15" count="20" damage="0">
+            </enemy> 
+            <enemy charset="charset2.png" icon="icon2.png" tilesize="64" maxhealth="350" money="15" movespeed="50" animationspeed="8" count="3" damage="0">
+            </enemy>
+            <enemy charset="charset3.png" icon="icon3.png" tilesize="64" maxhealth="400" money="20" movespeed="70" animationspeed="10" count="2" damage="32">
+            </enemy> 
+    	</wave>      
+            
+    </waves>
+  </enemies>

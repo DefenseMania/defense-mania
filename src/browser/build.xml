@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<project name="Merge to index.php" default="export">
+
+	<target name="export" depends="get_properties,clean_up">
+	    <mkdir dir="${export_dir}" />
+		<antcall target="add_pjs_comments" />
+		<antcall target="copy_html" />
+		<antcall target="concat_html" />
+		<antcall target="clean_after_build" />
+	    <echo>Done!</echo>
+	</target>
+
+	<target name="clean_up" depends="get_properties">
+	    <delete dir="${export_dir}" />
+	    <echo>Cleaned Up!</echo>
+	</target>
+
+	<target name="get_properties">
+	    <property file="ant.properties" />
+	    <echo>Imported Properties!</echo>
+	</target>
+
+	<target name="concat_pde">
+	    <concat destfile="${export_dir}/${tmp_file}">
+	    	<filelist id="files">
+	    		<file name="Browser.pde" />
+	    	</filelist>
+	        <fileset dir="${code_dir}">
+	            <include name="*.pde" />
+	        </fileset>
+	    </concat>
+	    <echo>Merged Files!</echo>
+	</target>
+
+	<target name="compress_pde" depends="concat_pde">
+	    <antcall target="compress">
+	        <param name="file" value="${export_dir}/${final_file}" />
+	    </antcall>
+	</target>
+
+	<target name="compress">
+	  <copy file="${file}" tofile="${file}.bak" />
+	  <exec executable="phantomjs">
+	  	<redirector output="${file}.js" />
+	  	<arg line="contrib/pde-to-js.js ${file}" />
+	  </exec>
+	   <exec executable="uglifyjs">
+	   		<arg line="${file}.js" />
+	   		<arg line="-o ${file}" />
+	   </exec>
+	  <echo>Compressed!</echo>
+	</target>
+
+	<target name="add_pjs_comments" depends="concat_pde,copy_images">
+		<fileset id="all_images" dir="${export_dir}">
+			<include name="**/*.png" />
+			<include name="**/*.jpg" />
+		</fileset>
+		<property name="images" refid="all_images" />
+		<echo file="${export_dir}/tmp_preload.pde"> @pjs preload="${images}"; */</echo>
+
+		<concat destfile="${export_dir}/${final_file}">
+			<filelist id="files">
+				<file name="PRELOAD.pde" />
+				<file name="${export_dir}/tmp_preload.pde" />
+				<file name="${export_dir}/${tmp_file}" />
+			</filelist>
+		</concat>
+		<echo>Preload Comments added!</echo>
+	</target>
+
+	<target name="copy_images">
+		<copy todir="${export_dir}">
+		    <fileset dir="${data_dir}" />
+		</copy>
+		<echo>Images copied!</echo>
+	</target>
+
+	<target name="copy_html">
+		<copy todir="${export_dir}">
+		    <fileset dir="${html_dir}" />
+		</copy>
+		<echo>HTML copied!</echo>
+	</target>
+
+	<target name="concat_html" depends="compress_pde">
+		<concat destfile="${export_dir}/index.html">
+	        <filelist id="files">
+	        	<file name="${export_dir}/top.html" />
+	        	<file name="${export_dir}/${final_file}" />
+	        	<file name="${export_dir}/bot.html" />
+	        </filelist>
+		</concat>
+		<echo>Merged into index.html</echo>
+	</target>
+
+	<target name="clean_after_build">
+		<delete file="${export_dir}/${final_file}" />
+		<delete file="${export_dir}/${final_file}.js" />
+		<delete file="${export_dir}/${final_file}.bak" />
+		<delete file="${export_dir}/top.html" />
+		<delete file="${export_dir}/bot.html" />
+		<delete file="${export_dir}/${tmp_file}" />
+		<delete file="${export_dir}/tmp_preload.pde" />
+	</target>
+
+</project>

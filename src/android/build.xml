@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<project name="Export as app" default="export">
+
+	<target name="clean_up" depends="get_properties">
+	   <delete dir="${export_dir}" failonerror="false" />
+	   <exec executable="ant" dir="android">
+			<arg value="clean" />
+		</exec>
+		<mkdir dir="${export_dir}" />
+	   <echo>Cleaned Up!</echo>
+	</target>
+
+	<target name="get_properties">
+	    <property file="ant.properties" />
+		<property environment="env" />
+		<echo>Imported Properties!</echo>
+	</target>
+
+	<target name="check" depends="clean_up">
+	    <available file="android/build.xml" property="android.present"/>
+	</target>
+
+	<target name="export" depends="check" if="android.present">
+		<exec executable="ant" dir="android">
+			<arg value="release" />
+		</exec>
+		<copy file="android/bin/Android-release-unsigned.apk" tofile="${export_dir}/DefenseMania-unsigned.apk" />
+	</target>
+
+	<target name="sign" id="android.present" depends="get_properties">
+		<signjar jar="android/bin/Android-release-unsigned.apk" alias="${env.DM_ALIAS}" verbose="true" keystore="${env.DM_KEYSTORE}" storepass="${env.DM_STOREPASS}" />
+		<exec executable="${env.DM_ZIPALIGN_EXECUTABLE}">
+			<arg line="-v 4 ${basedir}/android/bin/Android-release-unsigned.apk ${basedir}/${export_dir}/DefenseMania.apk" />
+		</exec>
+	</target>
+
+</project>
