@@ -2,6 +2,34 @@
 
 > A crossplatform tower defense game built with processing.
 
+## Installation
+
+**Windows, Linux, Mac OSX**: Download the latest release for your platform from [here](https://github.com/DefenseMania/defense-mania/releases).
+
+**Android**: Download the latest release from [here](https://github.com/DefenseMania/defense-mania/releases) or install it from the [Google PlayStore](https://play.google.com/store/apps/details?id=processing.test.android).
+
+**Web/Browser**: Just start the game [here](http://defensemania.de).
+
+## Prerequisites
+
+* [Java](http://www.oracle.com/technetwork/java/javase/downloads/jre7-downloads-1880261.html) (JRE) is required to run the native **Windows, Linux and Mac OSX** versions.
+* **Android** 2.3.3 Gingerbread is required to run DefenseMania and at least 256-512 MB of RAM.
+* Your Browser should support the [canvas](http://caniuse.com/#feat=canvas) element.
+
+## How to play the game
+
+1. Click on "Start", choose a map, a difficulty and start the game.
+2. Click anywhere on the map to build a tower. The hammer icon on the bottom left shows green areas where you can build towers.
+3. When you build the first tower, the game will start.
+4. Build towers to prevent the "enemies" from reaching the end of the path.
+5. Click on a tower to upgrade, sell or repair it. Selling a tower gives you about 80% of the money you paid for it in the first place.
+
+**Windows, Linux, MacOSX**: Navigation on the map holding your right mouse button. Zoom in with your mouse wheel.
+
+**Android**: Drag to navigation the map, pinch to zoom in.
+
+**Web/Browser**: Navigation on the map holding your right mouse button. Zooming is disabled.
+
 ## Contribute
 
 ### Game
