@@ -45,18 +45,29 @@ Take a look [here](https://github.com/DefenseMania/defense-mania-graphics).
 
 ## Roadmap
 
+##### 0.9.3
+
+* Optimize build scripts for continuos integration
+
 ##### 1.0.0
 
 * Port everything to Processing 2.2.1 (and maybe 3.0a)
-* Lovely sounds and music
-* Optimized build scripts that can be run by a CI-Server
+* Rebuild updater to work with GitHub
+* Move the website to GitHub pages
 
 ##### 1.1.0
 
-* Dragons
+* Dragons <3
+* Lovely sounds and music
+
+##### 1.2.0
+
+* Highscores
+
 
 ## Contributors
 
+* Kris Siepert [everything]
 * John Brüggemann [logo]
 * Lars Meyer [beta tester]
 * Alexander Spennesberger [beta tester]
