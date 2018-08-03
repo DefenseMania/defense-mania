@@ -2,6 +2,10 @@
 
 > A crossplatform tower defense game built with processing.
 
+## Donations
+
+If you like Defense Mania and want to support further development of software like this, buy me a beer by [donating via PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FC3GNGS5XD792). <3
+
 ## Installation
 
 **Windows, Linux, Mac OSX**: Download the latest release for your platform from [here](https://github.com/DefenseMania/defense-mania/releases).
