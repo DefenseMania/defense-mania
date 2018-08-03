@@ -42,7 +42,6 @@ If you like Defense Mania and want to support further development of software li
 
 * [Processing 2.03b](https://github.com/processing/processing/releases/tag/processing-2.0b3)
 * [Android SDK](https://developer.android.com/sdk/index.html#Other)
-* [JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 * [Apache Ant](https://ant.apache.org/manual/install.html)
 * [GIT](https://git-scm.com/downloads)
 * [UglifyJs](https://github.com/mishoo/UglifyJS#install-npm)
@@ -73,35 +72,3 @@ DefenseMania is splitted into 3 parts: desktop application and android applicati
 ### Graphics
 
 Take a look [here](https://github.com/DefenseMania/defense-mania-graphics).
-
-
-## Roadmap
-
-##### 0.9.3
-
-* Optimize build scripts for continuos integration
-
-##### 1.0.0
-
-* Port everything to Processing 2.2.1 (and maybe 3.0a)
-* Rebuild updater to work with GitHub
-* Move the website to GitHub pages
-
-##### 1.1.0
-
-* Dragons <3
-* Lovely sounds and music
-
-##### 1.2.0
-
-* Highscores
-
-
-## Contributors
-
-* Kris Siepert [everything]
-* John Brüggemann [logo]
-* Lars Meyer [beta tester]
-* Alexander Spennesberger [beta tester]
-* Dieter Meiller [beta tester]
-* Christoph Eichhammer [beta tester]
