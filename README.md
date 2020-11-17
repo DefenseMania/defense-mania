@@ -12,7 +12,7 @@ If you like Defense Mania and want to support further development of software li
 
 **Android**: Download the latest release from [here](https://github.com/DefenseMania/defense-mania/releases) or install it from the [Google PlayStore](https://play.google.com/store/apps/details?id=processing.test.android).
 
-**Web/Browser**: Just start the game [here](http://defensemania.de).
+**Web/Browser**: Just start the game [here](https://defensemania.github.io/).
 
 ## Prerequisites
 
