@@ -62,7 +62,7 @@ void setup() {
   );  
   
   updateRequest = loadStrings("http://update.defensemania.de/?v="+globalVersion);
-  if(Integer.parseInt(updateRequest[0]) == 1) {
+  if(updateRequest != null && Integer.parseInt(updateRequest[0]) == 1) {
      println("update available");
      updateMe = true;
   } 
